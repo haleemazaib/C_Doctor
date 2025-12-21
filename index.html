@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediFind - Find Your Healthcare Provider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fas fa-stethoscope"></i>
+                    <span>MediFind</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="doctor.html" class="nav-link">Find Doctor</a>
+                    <a href="speciality.html" class="nav-link">Specialties</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="#" class="btn-list-practice">List Your Practice</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your Perfect</h1>
+                <h1 class="hero-highlight">Healthcare Provider</h1>
+                <p class="hero-description">
+                    Search by disease, specialty, or doctor name. Discover trusted healthcare professionals near you.
+                </p>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search by disease, speciality or doctor name....">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse by Specialty Section -->
+    <section class="specialties-section">
+        <div class="container">
+            <h2>Browse by Specialty</h2>
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon cardiology">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Cardiology</h3>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon neurology">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neurology</h3>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon general">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>General</h3>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon orthopedics">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Orthopadics</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Doctors Section -->
+    <section class="doctors-section">
+        <div class="container">
+            <h2>Featured Doctors</h2>
+            <div class="doctors-grid">
+                <!-- Doctor 1 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop" alt="Dr. Sarah Khan">
+                    </div>
+                    <div class="doctor-info">
+                        <div class="doctor-header">
+                            <h3>Dr. Sarah Khan</h3>
+                            <div class="doctor-rating">4.8(127)</div>
+                        </div>
+                        <p class="doctor-specialty">Cardiologist</p>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-graduation-cap"></i> MD Harvard School</p>
+                            <p><i class="fas fa-map-marker-alt"></i> New York Medical Center</p>
+                            <p><i class="fas fa-briefcase"></i> 5 Years Exp</p>
+                        </div>
+                        <div class="expertise-section">
+                            <p class="expertise-title">Specializes in:</p>
+                            <div class="expertise-tags">
+                                <span class="expertise-tag">Heart Disease</span>
+                                <span class="expertise-tag">Hypertension</span>
+                                <span class="expertise-tag">Arrhythmia</span>
+                                <span class="expertise-tag">+1 more</span>
+                            </div>
+                        </div>
+                        <button class="appointment-btn">Book Appointment</button>
+                    </div>
+                </div>
+                
+                <!-- Doctor 2 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=400&fit=crop" alt="Dr. Michael Chen">
+                    </div>
+                    <div class="doctor-info">
+                        <div class="doctor-header">
+                            <h3>Dr. Michael Chen</h3>
+                            <div class="doctor-rating">4.9(154)</div>
+                        </div>
+                        <p class="doctor-specialty">Neurologist</p>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-graduation-cap"></i> MD Johns Hopkins</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Boston General Hospital</p>
+                            <p><i class="fas fa-briefcase"></i> 7 Years Exp</p>
+                        </div>
+                        <div class="expertise-section">
+                            <p class="expertise-title">Specializes in:</p>
+                            <div class="expertise-tags">
+                                <span class="expertise-tag">Migraine</span>
+                                <span class="expertise-tag">Epilepsy</span>
+                                <span class="expertise-tag">Stroke Care</span>
+                                <span class="expertise-tag">+2 more</span>
+                            </div>
+                        </div>
+                        <button class="appointment-btn">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Browse by speciality.</h2>
+            <button class="cta-btn">List Your Practice</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-stethoscope"></i>
+                        <span>MediFind</span>
+                    </div>
+                    <p class="brand-description">
+                        Connecting patients with trusted healthcare providers. Your health is our priority.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#">Home</a>
+                        <a href="#">Find Doctors</a>
+                        <a href="#">Specialities</a>
+                        <a href="#">About Us</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>For Providers</h4>
+                        <a href="#">List Your Practice</a>
+                        <a href="#">Provider Resources</a>
+                        <a href="#">Success Stories</a>
+                        <a href="#">Contact Support</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact Us</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Medical Plaza, Suite 100<br>New York, NY 10001</p>
+                        <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                        <p><i class="fas fa-envelope"></i> info@medifind.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 MediFind. All rights reserved.</p>
+                <p class="developer">Developed by Haleema Zaib</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchBtn = document.querySelector('.search-btn');
+            if(searchBtn) {
+                searchBtn.addEventListener('click', function() {
+                    const searchInput = document.querySelector('.search-input');
+                    if(searchInput.value.trim() === '') {
+                        alert('Please enter a search term');
+                    } else {
+                        alert('Searching for: ' + searchInput.value);
+                    }
+                });
+            }
+            
+            const appointmentBtns = document.querySelectorAll('.appointment-btn');
+            appointmentBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const doctorName = this.closest('.doctor-card').querySelector('h3').textContent;
+                    alert('Booking appointment with ' + doctorName);
+                });
+            });
+            
+            const listPracticeBtns = document.querySelectorAll('.btn-list-practice, .cta-btn');
+            listPracticeBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    alert('Redirecting to practice listing form');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

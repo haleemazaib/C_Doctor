@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediFind - Find Your Healthcare Provider</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link for icons (using FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link for Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Header - FIXED LINKS -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="stethoscope.webp" alt="MediFind Logo" class="logo-img">
+                    MediFind
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="#" class="nav-link" onclick="alert('Find Doctors page is coming soon!')">Find Doctors</a>
+                    <a href="#" class="nav-link" onclick="alert('Specialities page is coming soon!')">Specialities</a>
+                    <a href="#" class="nav-link" onclick="alert('About Us page is coming soon!')">About Us</a>
+                    <a href="#" class="nav-link" onclick="alert('Contact page is coming soon!')">Contact</a>
+                    <a href="#" class="btn-login" onclick="alert('Login feature coming soon!')">Login</a>
+                    <a href="#" class="btn-primary" onclick="alert('Sign Up feature coming soon!')">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Find Your Perfect</h1>
+            <h1>Healthcare Provider</h1>
+            <p>Search by disease, specialty, or doctor name. Discover trusted healthcare professionals near you.</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search for a doctor, specialty, or condition...">
+                <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+            </div>
+            <div id="searchMessage" class="search-message" style="display: none;"></div>
+        </div>
+    </section>
+
+    <!-- Browse by Specialty Section -->
+    <section class="specialties">
+        <div class="container">
+            <h2>Browse by Specialty</h2>
+            <div class="specialty-grid">
+                <div class="specialty-card">
+                    <img src="heart.jpg" alt="Cardiology Icon">
+                    <h3>Cardiology</h3>
+                </div>
+                <div class="specialty-card">
+                    <img src="brain.png" alt="Neurology Icon">
+                    <h3>Neurology</h3>
+                </div>
+                <div class="specialty-card">
+                    <img src="general.png" alt="General Icon">
+                    <h3>General</h3>
+                </div>
+                <div class="specialty-card">
+                    <img src="bone.png" alt="Orthopedics Icon">
+                    <h3>Orthopedics</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Doctors Section -->
+    <section class="featured-doctors">
+        <div class="container">
+            <h2>Featured Doctors</h2>
+            <div class="doctors-grid">
+                <!-- Doctor Card 1 -->
+                <div class="doctor-card">
+                    <div class="doctor-header">
+                        <img src="doctor1.jpg" alt="Dr. Sarah Khan">
+                        <div class="doctor-info">
+                            <h3>Dr. Sarah Khan</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">4.8 (127 reviews)</span>
+                            </div>
+                            <p class="specialty-tag">Cardiologist</p>
+                        </div>
+                    </div>
+                    <p class="education"><i class="fas fa-graduation-cap"></i> MD Harvard School</p>
+                    <div class="conditions">
+                        <span>Heart Disease</span>
+                        <span>Hypertension</span>
+                        <span>Arrhythmia</span>
+                    </div>
+                    <div class="doctor-footer">
+                        <p><i class="fas fa-map-marker-alt"></i> New York</p>
+                        <p><i class="fas fa-briefcase"></i> 5 Years Exp</p>
+                    </div>
+                    <button class="btn-view" onclick="alert('Viewing Dr. Sarah Khan profile')">View Profile</button>
+                </div>
+
+                <!-- Doctor Card 2 -->
+                <div class="doctor-card">
+                    <div class="doctor-header">
+                        <img src="doctor2.jpg" alt="Dr. Sarah Johnson">
+                        <div class="doctor-info">
+                            <h3>Dr. Sarah Johnson</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">4.9 (98 reviews)</span>
+                            </div>
+                            <p class="specialty-tag">Cardiologist</p>
+                        </div>
+                    </div>
+                    <p class="education"><i class="fas fa-graduation-cap"></i> MD, Harvard Medical School</p>
+                    <p class="hospital"><i class="fas fa-hospital"></i> New York Medical Center</p>
+                    <div class="conditions">
+                        <span>Heart Failure</span>
+                        <span>Preventive Care</span>
+                    </div>
+                    <div class="doctor-footer">
+                        <p><i class="fas fa-map-marker-alt"></i> New York</p>
+                        <p><i class="fas fa-briefcase"></i> 8 Years Exp</p>
+                    </div>
+                    <button class="btn-view" onclick="alert('Viewing Dr. Sarah Johnson profile')">View Profile</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Join Our Platform</h2>
+            <p>Connect with patients looking for quality healthcare.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary" onclick="alert('Patient Sign Up coming soon!')">Sign Up as Patient</a>
+                <a href="#" class="btn-secondary" onclick="alert('Doctor Application coming soon!')">Apply as Doctor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - FIXED LINKS -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-stethoscope"></i>
+                        <h3>MediFind</h3>
+                    </div>
+                    <p class="footer-description">
+                        Connecting patients with trusted healthcare providers. Your health is our priority.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="#" onclick="alert('Find Doctors page coming soon!')">Find Doctors</a></li>
+                        <li><a href="#" onclick="alert('Specialities page coming soon!')">Specialities</a></li>
+                        <li><a href="#" onclick="alert('About Us page coming soon!')">About Us</a></li>
+                        <li><a href="#" onclick="alert('For Providers page coming soon!')">For Providers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>For Providers</h4>
+                    <ul>
+                        <li><a href="#" onclick="alert('List Practice page coming soon!')">List Your Practice</a></li>
+                        <li><a href="#" onclick="alert('Provider Resources coming soon!')">Provider Resources</a></li>
+                        <li><a href="#" onclick="alert('Success Stories coming soon!')">Success Stories</a></li>
+                        <li><a href="#" onclick="alert('Contact Support coming soon!')">Contact Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Medical Plaza, Suite 100<br>New York, NY 10001</p>
+                        <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                        <p><i class="fas fa-envelope"></i> info@medifind.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MediFind. All rights reserved. | Developed by Haleema Zaib</p>
+                <div class="footer-policies">
+                    <a href="#" onclick="alert('Privacy Policy page coming soon!')">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#" onclick="alert('Terms of Service page coming soon!')">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#" onclick="alert('Cookie Policy page coming soon!')">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Search functionality
+            const searchBtn = document.getElementById('searchBtn');
+            const searchInput = document.getElementById('searchInput');
+            const searchMessage = document.getElementById('searchMessage');
+            
+            searchBtn.addEventListener('click', function() {
+                const searchTerm = searchInput.value.trim();
+                
+                if (searchTerm === '') {
+                    searchMessage.textContent = 'Please enter a search term';
+                    searchMessage.style.color = '#e74c3c';
+                    searchMessage.style.display = 'block';
+                    return;
+                }
+                
+                // Show success message
+                searchMessage.innerHTML = `Your search for "<strong>${searchTerm}</strong>" has been submitted!`;
+                searchMessage.style.color = '#2ecc71';
+                searchMessage.style.display = 'block';
+                
+                // Clear input after 3 seconds
+                setTimeout(() => {
+                    searchInput.value = '';
+                    searchMessage.style.display = 'none';
+                }, 3000);
+                
+                console.log('Search submitted:', searchTerm);
+            });
+            
+            // Also submit on Enter key
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchBtn.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Doctors - MediFind</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-stethoscope logo-icon"></i>
+                    <span class="logo-text">MediFind</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="doctors.html" class="nav-link active">Find Doctors</a>
+                    <a href="specialities.html" class="nav-link">Specialities</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="list-practice.html" class="btn-list-practice">List Practice</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- DOCTORS HERO -->
+    <section class="doctors-hero">
+        <div class="container">
+            <div class="doctors-hero-content">
+                <h1 class="doctors-title">Find Your Doctor</h1>
+                <p class="doctors-subtitle">Explore our comprehensive range of medical specialties and find the right care for your needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCTORS SEARCH FILTER -->
+    <section class="doctors-search">
+        <div class="container">
+            <div class="search-filters">
+                <div class="filter-group">
+                    <div class="filter-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="filter-input">
+                        <label for="searchInput">Search</label>
+                        <input type="text" id="searchInput" placeholder="Search by disease, doctor name or Specialty">
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <div class="filter-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="filter-input">
+                        <label for="locationInput">Location</label>
+                        <input type="text" id="locationInput" placeholder="Location or Zip code">
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <div class="filter-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <div class="filter-input">
+                        <label for="specialtySelect">Specialty</label>
+                        <select id="specialtySelect">
+                            <option value="">All Specialties</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="orthopedics">Orthopedics</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="dermatology">Dermatology</option>
+                            <option value="surgery">General Surgery</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button id="searchBtn" class="search-doctors-btn">
+                    <i class="fas fa-search"></i> Find Doctors
+                </button>
+            </div>
+            
+            <div id="searchMessage" class="search-message"></div>
+        </div>
+    </section>
+
+    <!-- DOCTORS LISTING -->
+    <section class="doctors-listing">
+        <div class="container">
+            <div class="doctors-header">
+                <h2 class="listing-title">Available Doctors</h2>
+                <div class="doctors-count" id="doctorsCount">12 Doctors Found</div>
+            </div>
+            
+            <div class="doctors-grid" id="doctorsGrid">
+                <!-- Doctor 1 -->
+                <div class="doctor-listing-card" data-specialty="cardiology" data-location="new york">
+                    <div class="doctor-image">
+                        <img src="c:\Users\Alina\Desktop\female doctor.jpg" alt="Dr. Sarah Khan" class="doctor-img">
+                        <div class="online-status online"></div>
+                    </div>
+                    <div class="doctor-info">
+                        <div class="doctor-header">
+                            <div>
+                                <h3 class="doctor-name">Dr. Sarah Khan</h3>
+                                <div class="doctor-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-text">4.8 (127 reviews)</span>
+                                </div>
+                            </div>
+                            <span class="specialty-badge">Cardiologist</span>
+                        </div>
+                        
+                        <p class="doctor-education"><i class="fas fa-graduation-cap"></i> MD Harvard School</p>
+                        
+                        <div class="doctor-conditions">
+                            <span class="condition-tag">Heart Disease</span>
+                            <span class="condition-tag">Hypertension</span>
+                            <span class="condition-tag">Arrhythmia</span>
+                            <span class="condition-tag">Heart Failure</span>
+                        </div>
+                        
+                        <div class="doctor-footer">
+                            <div class="location-exp">
+                                <p><i class="fas fa-map-marker-alt"></i> New York</p>
+                                <p><i class="fas fa-briefcase"></i> 5 Years Exp</p>
+                            </div>
+                            <div class="doctor-actions">
+                                <button class="btn-book">Book Appointment</button>
+                                <a href="#" class="btn-profile">View Profile <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more">
+                <button id="loadMoreBtn" class="btn-load-more">
+                    <i class="fas fa-plus"></i> Load More Doctors
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-stethoscope"></i>
+                        <h3>MediFind</h3>
+                    </div>
+                    <p class="footer-description">
+                        Connecting patients with trusted healthcare providers. Your health is our priority.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doctors.html" class="active">Find Doctors</a></li>
+                        <li><a href="specialities.html">Specialities</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="list-practice.html">For Providers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>For Providers</h4>
+                    <ul>
+                        <li><a href="list-practice.html">List Your Practice</a></li>
+                        <li><a href="#">Provider Resources</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Medical Plaza, Suite 100<br>New York, NY 10001</p>
+                        <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                        <p><i class="fas fa-envelope"></i> info@medifind.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MediFind. All rights reserved. | Developed by Hakim Ullah</p>
+                <div class="footer-policies">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- DOCTORS PAGE SCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            const searchInput = document.getElementById('searchInput');
+            const locationInput = document.getElementById('locationInput');
+            const specialtySelect = document.getElementById('specialtySelect');
+            const searchBtn = document.getElementById('searchBtn');
+            const searchMessage = document.getElementById('searchMessage');
+            const doctorsGrid = document.getElementById('doctorsGrid');
+            const doctorsCount = document.getElementById('doctorsCount');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const doctorCards = document.querySelectorAll('.doctor-listing-card');
+            
+            let visibleDoctors = 6;
+            const allDoctors = Array.from(doctorCards);
+            
+            // Mobile menu toggle
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+            
+            // Initialize doctors count
+            updateDoctorsCount();
+            
+            // Search functionality
+            searchBtn.addEventListener('click', function() {
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                const locationTerm = locationInput.value.trim().toLowerCase();
+                const specialtyTerm = specialtySelect.value.toLowerCase();
+                
+                let foundCount = 0;
+                
+                allDoctors.forEach(card => {
+                    const doctorName = card.querySelector('.doctor-name').textContent.toLowerCase();
+                    const doctorSpecialty = card.getAttribute('data-specialty');
+                    const doctorLocation = card.getAttribute('data-location');
+                    const conditions = Array.from(card.querySelectorAll('.condition-tag'))
+                        .map(tag => tag.textContent.toLowerCase())
+                        .join(' ');
+                    
+                    const matchesSearch = searchTerm === '' || 
+                        doctorName.includes(searchTerm) || 
+                        conditions.includes(searchTerm);
+                    
+                    const matchesLocation = locationTerm === '' || 
+                        doctorLocation.includes(locationTerm);
+                    
+                    const matchesSpecialty = specialtyTerm === '' || 
+                        doctorSpecialty === specialtyTerm;
+                    
+                    if (matchesSearch && matchesLocation && matchesSpecialty) {
+                        card.style.display = 'flex';
+                        foundCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Update visible doctors
+                visibleDoctors = foundCount;
+                updateDoctorsCount();
+                
+                // Show search results message
+                if (foundCount > 0) {
+                    searchMessage.textContent = `Found ${foundCount} doctor(s) matching your search`;
+                    searchMessage.style.color = '#2ecc71';
+                } else {
+                    searchMessage.textContent = 'No doctors found matching your search criteria';
+                    searchMessage.style.color = '#e74c3c';
+                }
+                
+                searchMessage.style.display = 'block';
+            });
+            
+            // Load more functionality
+            loadMoreBtn.addEventListener('click', function() {
+                visibleDoctors = Math.min(visibleDoctors + 3, allDoctors.length);
+                updateDoctorsDisplay();
+                updateDoctorsCount();
+                
+                if (visibleDoctors >= allDoctors.length) {
+                    loadMoreBtn.style.display = 'none';
+                }
+            });
+            
+            // Book appointment button click
+            document.querySelectorAll('.btn-book').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const doctorName = this.closest('.doctor-listing-card').querySelector('.doctor-name').textContent;
+                    alert(`Appointment booking feature for ${doctorName} would open here. In a real application, this would redirect to a booking system.`);
+                });
+            });
+            
+            // Helper functions
+            function updateDoctorsCount() {
+                const visibleCards = document.querySelectorAll('.doctor-listing-card[style*="display: flex"], .doctor-listing-card:not([style])').length;
+                doctorsCount.textContent = `${visibleCards} Doctors Found`;
+            }
+            
+            function updateDoctorsDisplay() {
+                allDoctors.forEach((card, index) => {
+                    if (index < visibleDoctors) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Initialize display
+            updateDoctorsDisplay();
+            
+            // Clear search when inputs are cleared
+            searchInput.addEventListener('input', function() {
+                if (this.value === '') {
+                    resetFilters();
+                }
+            });
+            
+            locationInput.addEventListener('input', function() {
+                if (this.value === '') {
+                    resetFilters();
+                }
+            });
+            
+            function resetFilters() {
+                if (searchInput.value === '' && locationInput.value === '' && specialtySelect.value === '') {
+                    visibleDoctors = 6;
+                    updateDoctorsDisplay();
+                    updateDoctorsCount();
+                    searchMessage.style.display = 'none';
+                    loadMoreBtn.style.display = 'block';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
